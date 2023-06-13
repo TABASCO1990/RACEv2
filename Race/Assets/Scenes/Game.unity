@@ -414,7 +414,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -126.06555, y: 126.06543}
+  m_AnchoredPosition: {x: -126.06543, y: 126.06543}
   m_SizeDelta: {x: 252.1311, y: 252.1311}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1063484850
@@ -1465,8 +1465,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6728673385479493088}
   - component: {fileID: 1430967235760976968}
-  - component: {fileID: 6728673385479493089}
   - component: {fileID: 6728673385479493090}
+  - component: {fileID: 6728673385479493089}
+  - component: {fileID: 6728673385479493093}
   - component: {fileID: 6728673385479493092}
   - component: {fileID: 6728673385479493091}
   m_Layer: 0
@@ -1667,6 +1668,32 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 6728673385479493093}
+        m_TargetAssemblyTypeName: ColorSetter, Assembly-CSharp
+        m_MethodName: Change
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &6728673385479493093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6209017374940663642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b11dbd29216998044ae92d566c892fd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _materialCar: {fileID: 2100000, guid: 07f44fe3e9c462146a7769b976c50ec4, type: 2}
+  _targetColor: {r: 1, g: 0.033018887, b: 0.033018887, a: 0}
 --- !u!4 &7151314302350374961
 Transform:
   m_ObjectHideFlags: 0

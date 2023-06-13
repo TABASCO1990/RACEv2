@@ -4,10 +4,8 @@ using UnityEngine.Events;
 public class Player : MonoBehaviour
 {
     [SerializeField] private int _health;
-    [SerializeField] private Material _materialCar;
 
     private int _score;
-    private Material _currentMaterial;
 
     public event UnityAction<int> ScoreChanged;
     public event UnityAction<int> HealthChanged;
@@ -15,7 +13,6 @@ public class Player : MonoBehaviour
     private void Start()
     {
         HealthChanged?.Invoke(_health);
-        _currentMaterial = _materialCar;
     }
 
     public void TakeDamage(int damage)
@@ -38,7 +35,6 @@ public class Player : MonoBehaviour
 
     public void Die()
     {
-        _materialCar = _currentMaterial;
         print("сдох");
     }
 }
