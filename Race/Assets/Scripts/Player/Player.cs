@@ -10,11 +10,14 @@ public class Player : MonoBehaviour
     private string _saveScore = "SaveScore";
 
     public event UnityAction<int> ScoreChanged;
+    public event UnityAction<int> HightScoreChanged;
     public event UnityAction<int> HealthChanged;
     public event UnityAction Died;
 
+    public int HightScore => _hightScore;
+
     private void Awake()
-    {
+    {       
         _hightScore = PlayerPrefs.GetInt(_saveScore);
     }
 
@@ -53,6 +56,7 @@ public class Player : MonoBehaviour
             _hightScore = _score;
 
             PlayerPrefs.SetInt(_saveScore, _hightScore);
+            HightScoreChanged?.Invoke(_hightScore);
         }
     }
 }
