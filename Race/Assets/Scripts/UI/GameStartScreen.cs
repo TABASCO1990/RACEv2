@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class GameStartScreen : MonoBehaviour
 {
@@ -27,12 +28,18 @@ public class GameStartScreen : MonoBehaviour
 
     private void OnDied()
     {
-        SceneManager.LoadScene(0);
+        StartCoroutine(GameOver());
     }
 
     private void OnPlayButtonClick()
     {
         Time.timeScale = 1;
         _startPanel.SetActive(false);
+    }
+
+    private IEnumerator GameOver()
+    {
+        yield return new WaitForSeconds(3f);
+        SceneManager.LoadScene(0);
     }
 }
