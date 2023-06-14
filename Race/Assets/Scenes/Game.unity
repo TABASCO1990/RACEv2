@@ -159,7 +159,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.739, y: 0.12733044}
   m_AnchorMax: {x: 0.97, y: 1}
-  m_AnchoredPosition: {x: 0.10003662, y: 0.5}
+  m_AnchoredPosition: {x: 0.099975586, y: 0.5}
   m_SizeDelta: {x: 0.25450134, y: -1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &164700960
@@ -358,7 +358,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.873}
   m_AnchorMax: {x: 1, y: 0.9346459}
-  m_AnchoredPosition: {x: -0.039978027, y: -0.12182617}
+  m_AnchoredPosition: {x: -0.039916992, y: -0.12182617}
   m_SizeDelta: {x: 0, y: -3.7562008}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &663362500
@@ -705,7 +705,7 @@ GameObject:
   - component: {fileID: 876410582}
   - component: {fileID: 876410581}
   m_Layer: 0
-  m_Name: Way
+  m_Name: WayGenerator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1018,7 +1018,6 @@ GameObject:
   - component: {fileID: 1063484851}
   - component: {fileID: 1063484850}
   - component: {fileID: 1063484853}
-  - component: {fileID: 1063484854}
   m_Layer: 5
   m_Name: ButtonSpeed
   m_TagString: Untagged
@@ -1173,27 +1172,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!95 &1063484854
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1063484848}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ec70e125d8b344b4ca018ac7d56131b7, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1086501573
 GameObject:
   m_ObjectHideFlags: 0
