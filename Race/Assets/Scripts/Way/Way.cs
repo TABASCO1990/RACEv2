@@ -15,6 +15,8 @@ public class Way : ObjectPool
     private float _offsetZ = -80f;
     private float _currentSpeedWay;
 
+    public bool IsAccelerationWay => _isAccelerationWay;
+
     private void Start()
     {
         foreach (var road in _roadPrefabs)

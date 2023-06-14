@@ -8,6 +8,7 @@ public class GameStartScreen : MonoBehaviour
     [SerializeField] private GameObject _startPanel;
     [SerializeField] private Button _playButton;
     [SerializeField] private Player _player;
+    [SerializeField] private AudioSource _audioSource;
 
     private void OnEnable()
     {
@@ -23,7 +24,8 @@ public class GameStartScreen : MonoBehaviour
 
     private void Start()
     {
-        Time.timeScale = 0;       
+        Time.timeScale = 0;
+        _audioSource.Stop();
     }
 
     private void OnDied()
@@ -35,10 +37,12 @@ public class GameStartScreen : MonoBehaviour
     {
         Time.timeScale = 1;
         _startPanel.SetActive(false);
+        _audioSource.Play();
     }
 
     private IEnumerator GameOver()
     {
+        _audioSource.Stop();
         yield return new WaitForSeconds(3f);
         SceneManager.LoadScene(0);
     }

@@ -7,7 +7,7 @@ public class ColorSetter : MonoBehaviour
     [SerializeField] private Color _targetColor;
 
     private Color _currentColor;
-    private float durationTime = 0.1f;
+    private float durationTime = 0.2f;
     private int loopCount = 2;
 
     private void Start()
