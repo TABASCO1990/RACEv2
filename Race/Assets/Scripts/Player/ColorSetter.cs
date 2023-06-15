@@ -17,7 +17,8 @@ public class ColorSetter : MonoBehaviour
 
     public void Change()
     {
-        _materialCar.DOColor(_currentColor, 0);
+        DOTween.Kill(_materialCar);
+        _materialCar.color = _currentColor;
         _materialCar.DOColor(_targetColor, durationTime).SetLoops(loopCount, LoopType.Yoyo);
     }
 }
