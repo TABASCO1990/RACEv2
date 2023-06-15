@@ -273,7 +273,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
+  m_fontSize: 161.6
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -381,7 +381,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ' OVER'
+  m_text: OVER
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 832a4cb811c13dc4cbbd49493b7c23e0, type: 2}
   m_sharedMaterial: {fileID: 5217894943006182156, guid: 832a4cb811c13dc4cbbd49493b7c23e0, type: 2}
@@ -408,7 +408,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
+  m_fontSize: 181.05
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1823,6 +1823,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1168831024}
+  - component: {fileID: 1168831026}
   - component: {fileID: 1168831025}
   m_Layer: 5
   m_Name: GameOver
@@ -1853,7 +1854,15 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1168831025
+--- !u!222 &1168831025
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1168831023}
+  m_CullTransparentMesh: 1
+--- !u!114 &1168831026
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1870,7 +1879,7 @@ MonoBehaviour:
     m_Right: 0
     m_Top: 0
     m_Bottom: 0
-  m_ChildAlignment: 0
+  m_ChildAlignment: 4
   m_Spacing: 0
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
@@ -2021,7 +2030,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -544.5155, y: 0}
+  m_SizeDelta: {x: 502.18982, y: 2064.558}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1448691362
 MonoBehaviour:
@@ -2328,7 +2337,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -678.6125, y: 0}
+  m_SizeDelta: {x: 502.18982, y: 2064.558}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1566601484
 MonoBehaviour:
