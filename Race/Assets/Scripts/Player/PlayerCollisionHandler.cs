@@ -4,8 +4,8 @@ using UnityEngine.Events;
 [RequireComponent(typeof(Player))]
 public class PlayerCollisionHandler : MonoBehaviour
 {
-    [SerializeField] private UnityEvent _reachedPont;
-    [SerializeField] private UnityEvent _encountered;
+    [SerializeField] private UnityEvent _reachedPoint;
+    [SerializeField] private UnityEvent _reachedObstacle;
 
     private Player _player;
 
@@ -19,7 +19,7 @@ public class PlayerCollisionHandler : MonoBehaviour
         if(other.TryGetComponent(out ScoreZone zone))
         {
             _player.IncreaseScore();
-            _reachedPont?.Invoke();
+            _reachedPoint?.Invoke();
         }
     }
 
@@ -27,7 +27,7 @@ public class PlayerCollisionHandler : MonoBehaviour
     {        
         if(other.TryGetComponent(out Enemy enemyCar))
         {              
-            _encountered?.Invoke();         
+            _reachedObstacle?.Invoke();         
         }
     }
 }
