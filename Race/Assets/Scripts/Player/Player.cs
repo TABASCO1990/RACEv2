@@ -44,12 +44,12 @@ public class Player : MonoBehaviour
         ScoreChanged?.Invoke(_score);
     }
 
-    public void Die()
+    private void Die()
     {
         Died?.Invoke();
     }
 
-    public void SetHightScore()
+    private void SetHightScore()
     {
         if(_score > _hightScore)
         {
