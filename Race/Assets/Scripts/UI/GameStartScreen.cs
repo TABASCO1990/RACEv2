@@ -43,7 +43,8 @@ public class GameStartScreen : MonoBehaviour
     private IEnumerator GameOver()
     {
         _audioSource.Stop();
-        yield return new WaitForSeconds(3f);
+        float delay = 3f;
+        yield return new WaitForSeconds(delay);
         SceneManager.LoadScene(0);
     }
 }
