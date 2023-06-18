@@ -10,6 +10,8 @@ public class GameStartScreen : MonoBehaviour
     [SerializeField] private Player _player;
     [SerializeField] private AudioSource _audioSource;
 
+    private float _delayInLoadingScene = 3f;
+
     private void OnEnable()
     {
         _player.Died += OnDied;
@@ -42,9 +44,8 @@ public class GameStartScreen : MonoBehaviour
 
     private IEnumerator GameOver()
     {
-        _audioSource.Stop();
-        float delay = 3f;
-        yield return new WaitForSeconds(delay);
+        _audioSource.Stop();       
+        yield return new WaitForSeconds(_delayInLoadingScene);
         SceneManager.LoadScene(0);
     }
 }
